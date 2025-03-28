@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+struct Contenedor {
+    int identificacion;
+    float peso;
+    int puertoarribo;
+};
+
+int main() {
+    Contenedor contenedores[100];
+    int contenedorespuerto[3] = {0, 0, 0};
+    double pesototal = 0, mayorpeso = 0;
+    int contenedormayorpeso = 0;
+
+    for (int i = 0; i < 100; i++) {
+        printf("contenedor #%d:\n", i + 1);
+        printf("identificación: ");
+        scanf("%d", &contenedores[i].identificacion);
+        printf("peso (kg): ");
+        scanf("%lf", &contenedores[i].peso);
+        printf("puerto de arribo (1-3): ");
+        scanf("%d", &contenedores[i].puertoarribo);
+
+        pesototal += contenedores[i].peso;
+
+        if (contenedores[i].peso > mayorpeso) {
+            mayorpeso = contenedores[i].peso;
+            contenedormayorpeso = contenedores[i].identificacion;
+        }
+
+        contenedorespuerto[contenedores[i].puertoarribo - 1]++;
+    }
+
+    printf("\npeso total que el buque debe trasladar: %.2f kg\n", pesototal);
+    printf("contenedor de mayor peso: %d\n", contenedormayorpeso);
+    printf("contenedores por puerto:\n");
+    for (int i = 0; i < 3; i++) {
+        printf("puerto %d: %d contenedores\n", i + 1, contenedorespuerto[i]);
+    }
+
+    return 0;
+}
+
