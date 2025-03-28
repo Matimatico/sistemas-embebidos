@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-struct contenedor { 
+struct Contenedor { 
     int identificacion;
     float peso;
     int puertoarribo;
 };
 
 int main() {
-    struct contenedor contenedores[100];
+    struct Contenedor contenedores[100];
     int contenedorespuerto[3] = {0, 0, 0};
     double pesototal = 0, mayorpeso = 0;
     int contenedormayorpeso = 0;
