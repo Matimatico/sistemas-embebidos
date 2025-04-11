@@ -42,9 +42,12 @@ int main() {
     familias[0]={.domicilio="Cochabamba 2744".tipo="C"};
     familias[1]={.domicilio="General Guemes 465".tipo="C"}; 
     personas[0]={.nombre="Matias Serafini".edad=18 .sexo="M" .estudio="S" .terminado="I"};
-    personas[1]={.nombre=""
-    
-    
-    
+    personas[1]={.nombre="Gustavo Serafini".edad=56 .sexo="M" .estudio="T" .terminado="C"};
+    personas[2]={.nombre="Helena Ribero".edad=51 .sexo="F" .estudio="U" .terminado="C"};
+    personas[3]={.nombre="Fernando Serafini".edad=11 .sexo="M" .estudio="N" .terminado="I"};
+    personas[4]={.nombre="Franco Maio" .edad=18 .sexo="M" .estudio="S" .terminado="I"};
+    personas[5]={-nombre="Kudell Maradona" .edad=18 .sexo="M".estudio="S" .terminado="I"};
+    personas[6]={-nombre="Gonzalo Belmonte" .edad=18 .sexo="M".estudio="S" .terminado="I"};
+    personas[7]={-nombre="Benicio Pavon" .edad=18 .sexo="M".estudio="S" .terminado="I"};
  return 0;
-}  
+}
